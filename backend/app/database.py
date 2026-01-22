@@ -12,7 +12,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 """Данный метод предназначен для создании новой сессии
-при ображении к базе данных и корректному завершении работы"""
+при обращении к базе данных и корректному завершении работы"""
 def get_db():
     db = SessionLocal()
     try:
